@@ -2,13 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Josefin Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 a,
@@ -16,6 +10,13 @@ ul,
 ol,
 li {
     all: unset;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -46,7 +47,6 @@ li {
 }
 
 .nav-list a {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 17px;
 }
@@ -111,7 +111,6 @@ li {
 
 .hover-text p {
     color: #FFFFFF;
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 64px;
 }
@@ -158,7 +157,6 @@ li {
 }
 
 .carousel-item p {
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     font-size: 24px;
     text-align: left;
@@ -206,14 +204,12 @@ li {
 }
 
 .retail-center h1 {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 35px;
 
 }
 
 .retail-center p {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 47px;
 
@@ -243,7 +239,6 @@ li {
 
 .products h1 {
     text-align: center;
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 35px;
 }
@@ -268,7 +263,6 @@ li {
 }
 
 .product-item p {
-    font-family: Josefin Sans;
     font-weight: 300;
     font-size: 24px;
 }
@@ -291,13 +285,11 @@ li {
 }
 
 .testimonials-content h1 {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 35px;
 }
 
 .testimonials-content p {
-    font-family: Josefin Sans;
     font-weight: 300;
     font-size: 18px;
 }
@@ -346,14 +338,11 @@ li {
 }
 
 .footer-item a {
-
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 14px;
 }
 
 .footer-item p {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 14px;
 
@@ -374,7 +363,6 @@ li {
 }
 
 .footer-about p {
-    font-family: Josefin Sans;
     font-weight: 300;
     font-size: 12px;
 }
@@ -395,7 +383,6 @@ li {
     padding: 14px 24px;
     color: #fff;
     cursor: pointer;
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 14px;
     width: fit-content;
