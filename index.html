@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -54,21 +55,31 @@
         </div>
     </div>
 
-    <div class="carusel">
-        <div class="carusel-item">
-            <img src="src/dummy.png">
-            <p>GLIDE</p>
-        </div>
-        <div class="carusel-item">
-            <img src="src/dummy.png">
-            <p>MAGNETIC CORE BOBBIN</p>
-        </div>
-        <div class="carusel-item">
-            <img src="src/dummy.png">
-            <p>PREMIUM STABILIZER</p>
+    <div class="glide glide_carousel">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+
+                <li class="glide__slide carousel-item">
+                    <img src="src/dummy.png">
+                    <p>GLIDE</p>
+                </li>
+                <li class="glide__slide carousel-item">
+                    <img src="src/dummy.png">
+                    <p>MAGNETIC CORE BOBBIN</p>
+                </li>
+                <li class="glide__slide carousel-item">
+                    <img src="src/dummy.png">
+                    <p>PREMIUM STABILIZER</p>
+                </li>
+            </ul>
         </div>
 
+        <div class="glide__arrows arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
+        </div>
     </div>
+
     <div class="retail-content">
         <div class="retail-nav">
             <div class="retail-center">
@@ -104,20 +115,35 @@
 
     </section>
     <div class="testimonials-container">
-        <div class="testimonials-content">
-            <h1>Testimonials</h1>
-            <p>As a machine quilter, I love the sheen of Glide and how it adds an extra special touch to my quilts. It's
-                the
-                perfect blend of beauty and
-                strength. Not only do I love the thread, but I love working with Hab+Dash to bring out the best in my
-                quilting. They have been an
-                integral part of our Free Motion Quilting Challenges and helped meet our thread needs each time</p>
-            <p>-Angela Walters-</p>
-            <div>
-                <span>
-                    <1 /10>
-                </span>
+        <div class="glide glide_testimonial">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+
+                    <div class="testimonials-content glide__slide carousel-item">
+                        <h1>Testimonials</h1>
+                        <p>As a machine quilter, I love the sheen of Glide and how it adds an extra special touch to my
+                            quilts.
+                            It's
+                            the
+                            perfect blend of beauty and
+                            strength. Not only do I love the thread, but I love working with Hab+Dash to bring out the
+                            best
+                            in
+                            my
+                            quilting. They have been an
+                            integral part of our Free Motion Quilting Challenges and helped meet our thread needs each
+                            time
+                        </p>
+                        <p>-Angela Walters-</p>
+
+                    </div>
+                </div>
             </div>
+            <div class="glide__arrows arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
+            </div>
+
         </div>
     </div>
 
@@ -128,44 +154,44 @@
             <div class="footer-item footer-about">
                 <img src="src/logo.png" alt="Logo" class="footer-logo">
                 <p>
-                    Hab+Dash is a division of the filament 
-                    technologies company, Fil-Tec, Inc. and 
-                    is a proudU.S.A. manufacturer of sewing 
-                    threads and pre-wound bobbins. Our 
-                    wholesale site is dedicated to offering 
-                    our manufactured products to commercial 
-                    embroiderers, long-armquilters and retail 
-                    sewing shops. In addition to the products 
-                    we manufacture, we have sourced the best 
-                    products and accessories to benefit our 
+                    Hab+Dash is a division of the filament
+                    technologies company, Fil-Tec, Inc. and
+                    is a proudU.S.A. manufacturer of sewing
+                    threads and pre-wound bobbins. Our
+                    wholesale site is dedicated to offering
+                    our manufactured products to commercial
+                    embroiderers, long-armquilters and retail
+                    sewing shops. In addition to the products
+                    we manufacture, we have sourced the best
+                    products and accessories to benefit our
                     customers.
                 </p>
             </div>
             <div class="footer-item">
                 <h4>SUPPORT</h4>
-                    <div><a href="#">Stitch Rewards </a></div>
-                    <div><a href="#">Core Return Program </a></div>
-                    <div><a href="#">FAQs </a></div>
-                    <div><a href="#">Terms and Conditions</a></div>
-                    <div><a href="#">Online Dealers</a></div>
+                <div><a href="#">Stitch Rewards </a></div>
+                <div><a href="#">Core Return Program </a></div>
+                <div><a href="#">FAQs </a></div>
+                <div><a href="#">Terms and Conditions</a></div>
+                <div><a href="#">Online Dealers</a></div>
             </div>
 
             <div class="footer-item">
                 <h4>USEFUL LINKS</h4>
-                    <div><a href="#">Digital Color Card</a></div>
-                    <div><a href="#">Which Bobbin Fits?</a></div>
-                    <div><a href="#">Color Conversion</a></div>
-                    <div><a href="#">Stabilizer Applications</a></div>
-                    <div><a href="#">Selecting a Stabilizer</a></div>
-                    <div><a href="#">New Site Features</a></div>
-                    <div><a href="#">Institute of Heraldry</a></div>
-                    <div><a href="#">Kimberbell Solids</a></div>
+                <div><a href="#">Digital Color Card</a></div>
+                <div><a href="#">Which Bobbin Fits?</a></div>
+                <div><a href="#">Color Conversion</a></div>
+                <div><a href="#">Stabilizer Applications</a></div>
+                <div><a href="#">Selecting a Stabilizer</a></div>
+                <div><a href="#">New Site Features</a></div>
+                <div><a href="#">Institute of Heraldry</a></div>
+                <div><a href="#">Kimberbell Solids</a></div>
             </div>
             <div class="footer-item">
                 <h4>About Us</h4>
-                    <div><a href="#">Our Story</a></div>
-                    <div><a href="#">Show Schedule</a></div>
-                    <div><a href="#">Testimonials</a></div>
+                <div><a href="#">Our Story</a></div>
+                <div><a href="#">Show Schedule</a></div>
+                <div><a href="#">Testimonials</a></div>
             </div>
 
             <div class="footer-item footer-newsletter">
@@ -176,11 +202,12 @@
                 <button class="button newsletter-button">Subscribe</button>
             </div>
 
-            
+
         </div>
         <p class="rights">© 2024 Hab+Dash. All rights reserved.</p>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="myScript.js"></script>
 </body>
 

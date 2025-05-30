@@ -115,33 +115,59 @@ li {
     gap: 40px;
 }
 
-.carusel {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    align-items: start;
-    text-align: center;
-    justify-self: center;
+.glide_carousel {
+    margin-top: 60px;
 }
 
-.carusel-item {
+
+.glide_carousel .glide {
+    position: relative;
+    max-width: 100%;
+    overflow: visible;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.glide_carousel .glide__track {
+    overflow: hidden;
+}
+
+.glide_carousel .glide__slide {
     display: grid;
     gap: 20px;
     justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
 }
 
-.carusel-item img {
+.carousel-item img {
     width: 577px;
     height: 577px;
     display: block;
 }
 
-.carusel-item p {
-    font-family: Josefin Sans;
+.carousel-item p {
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     font-size: 24px;
     text-align: left;
+}
+
+.glide_carousel .arrows {
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    z-index: 10;
+}
+
+.glide_carousel .glide__arrow {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #000;
 }
 
 .retail-content {
@@ -230,12 +256,12 @@ li {
 
 .testimonials-container {
     display: flex;
+    justify-content: center;
     background: #F9F9F9;
     margin-top: 40px;
 }
 
 .testimonials-content {
-    max-width: 1020px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -256,8 +282,21 @@ li {
     font-weight: 300;
     font-size: 18px;
 }
-.testimonials-content span{
+.glide_testimonial{
+     max-width: 1020px;
+}
+.glide_testimonial .glide__arrows {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.glide_testimonial .glide__arrow {
+    background: none;
+    border: none;
+    font-size: 32px;
     cursor: pointer;
+    margin: 0 5px;
+    color: #000;
 }
 
 .footer {
@@ -328,7 +367,7 @@ li {
     max-width: 1220px;
 }
 
-.button{
+.button {
     background-color: transparent;
     border: 1px solid #fff;
     padding: 14px 24px;
@@ -344,10 +383,10 @@ li {
     background-color: #000;
     border: 1px solid #000;
 }
-.search-button{
+
+.search-button {
     background: none;
     border: none;
     color: #000;
     cursor: pointer;
 }
-/* text-transform: uppercase; */
